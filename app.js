@@ -1,10 +1,10 @@
 // Categories with SVG-friendly icon placeholders (you can replace icons with SVG paths later)
 const categories = [
-  { name: "Sports", color: "#ff7675", emoji: "🏈" },
-  { name: "Geography", color: "#74b9ff", emoji: "🌍" },
-  { name: "Science", color: "#55efc4", emoji: "🧪" },
-  { name: "History", color: "#ffeaa7", emoji: "🏛️" },
-  { name: "Art", color: "#a29bfe", emoji: "🎨" }
+  { name: "Sports", color: "#ff7723ff", emoji: "🏈" },
+  { name: "Geography", color: "#419cf7ff", emoji: "🌍" },
+  { name: "Science", color: "#1ce358ff", emoji: "🧪" },
+  { name: "History", color: "#f5d25eff", emoji: "🏛️" },
+  { name: "Art", color: "#ef3333ff", emoji: "🎨" }
 ];
 
 const canvas = document.getElementById("wheel");
