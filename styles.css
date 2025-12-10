@@ -115,18 +115,31 @@ body {
 }
 
 /* Ajuste de la ruleta en móviles */
-@media (max-width: 600px) {
-  .wheel-container {
-    width: 85vw;
-    height: 85vw;
-  }
+/* --- RESPONSIVE PARA CELULAR --- */
+@media (max-width: 768px) {
 
-  .char {
-    width: 18vw;
-    height: 18vw;
-  }
+    .ruleta-container {
+        width: 260px !important;
+        height: 260px !important;
+    }
 
-  .title {
-    font-size: 1.8rem;
-  }
+    .ruleta {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    #flecha {
+        width: 40px !important;
+        top: -15px !important;
+    }
+
+    .particula {
+        width: 6px !important;
+        height: 6px !important;
+    }
+
+    .personaje {
+        transform: scale(0.55) !important; /* Reduce tamaño */
+        margin-top: -60px !important;      /* Baja los personajes */
+    }
 }
