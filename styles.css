@@ -113,3 +113,20 @@ body {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
+
+/* Ajuste de la ruleta en móviles */
+@media (max-width: 600px) {
+  .wheel-container {
+    width: 85vw;
+    height: 85vw;
+  }
+
+  .char {
+    width: 18vw;
+    height: 18vw;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+}
