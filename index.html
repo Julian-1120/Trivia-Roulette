@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trivia Roulette</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <h2 class="title">Made By: Julian :)</h2>
+
+  <div class="wheel-wrapper">
+    <div class="wheel-container">
+      <canvas id="wheel"></canvas>
+        <!-- PERSONAJES ALREDEDOR DE LA RULETA -->
+<img src="./images/sports.webp" class="char char1">
+<img src="./images/geography.webp" class="char char2">
+<img src="./images/art.webp" class="char char3">
+<img src="./images/history.webp" class="char char4">
+<img src="./images/science.webp" class="char char5">
+
+      <!-- Botón central -->
+      <div class="center-btn" id="spinBtn">SPIN</div>
+    </div>
+  </div>
+
+  <h3 id="result"></h3>
+<div id="categoryPopup" class="category-popup">Category</div>
+
+  <!-- Sonidos -->
+  <audio id="spinSound" src="https://cdn.pixabay.com/download/audio/2022/03/31/audio_3b8a67f52e.mp3?filename=wheel-spin-100464.mp3"></audio>
+  <audio id="stopSound" src="https://cdn.pixabay.com/download/audio/2022/10/30/audio_097a8a7981.mp3?filename=click-124467.mp3"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>

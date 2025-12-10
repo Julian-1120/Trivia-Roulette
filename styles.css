@@ -1,0 +1,115 @@
+/* Título */
+.title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  z-index: 200;
+  position: relative;
+}
+
+/* Contenedor general */
+.wheel-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.wheel-container {
+  position: relative;
+  width: 420px;
+  height: 420px;
+}
+
+/* Canvas de la ruleta */
+#wheel {
+  width: 100%;
+  height: 100%;
+}
+
+/* Botón central */
+.center-btn {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: white;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 150;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+/* 🔥 PERSONAJES ALREDEDOR DE LA RULETA (CÍRCULO PERFECTO) */
+.char {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  z-index: 130;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+/* 📌 Ubicaciones en círculo perfecto (5 personajes → cada 72°) */
+.char1 { transform: translate(-50%, -50%) rotate(0deg)   translate(240px) rotate(0deg); }
+.char2 { transform: translate(-50%, -50%) rotate(72deg)  translate(240px) rotate(-72deg); }
+.char3 { transform: translate(-50%, -50%) rotate(144deg) translate(240px) rotate(-144deg); }
+.char4 { transform: translate(-50%, -50%) rotate(216deg) translate(240px) rotate(-216deg); }
+.char5 { transform: translate(-50%, -50%) rotate(288deg) translate(240px) rotate(-288deg); }
+
+/* Resultado */
+#result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* 🍃 Fondo general */
+body {
+  background: #101820;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* Título */
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* Mensaje animado de categoría */
+.category-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  background: white;
+  color: #222;
+  padding: 25px 40px;
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  opacity: 0;
+  z-index: 999;
+  transition: 0.4s ease-in-out;
+  pointer-events: none;
+}
+
+/* Cuando aparece */
+.category-popup.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
